@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-contact]').forEach(a=>{const k=a.dataset.contact,v=window.contacts[k];if(v){a.href=k==='telephone'?'tel:'+v:k==='email'?'mailto:'+v:v;}if(['site','facebook','instagram'].includes(k)){a.target='_blank';a.rel='noopener noreferrer';}});
