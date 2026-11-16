@@ -1,1 +1,26 @@
-*{box-sizing:border-box}body{margin:0;background:#fff;color:#243b22;font-family:Arial,Helvetica,sans-serif}main{width:min(100%,620px);margin:auto;padding:16px 24px 28px}header{text-align:center;padding-bottom:24px}header img{display:block;width:min(75%,300px);height:auto;margin:0 auto}h1{margin:0;font-size:clamp(24px,6vw,34px);font-weight:600}header p{margin:9px 0 0;color:#535b50;font-size:17px}nav{display:grid;gap:15px}.button{display:flex;align-items:center;gap:18px;border-radius:28px;padding:22px 23px;color:white;text-decoration:none;min-height:110px}.phone,.email{background:#334b24}.site{background:#e47b19}.facebook{background:linear-gradient(105deg,#2460ae,#274d88)}.instagram{background:linear-gradient(25deg,#ffcb5b 0%,#ff275e 30%,#ed0aa2 65%,#ac00cf 100%)}.icon{flex:0 0 52px;width:52px;height:52px;display:grid;place-items:center}.icon svg{width:47px;height:47px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.label{min-width:0;flex:1;display:grid;gap:8px}.label strong{font-size:clamp(16px,4.3vw,25px);line-height:1.15}.label>span{font-size:clamp(12px,3.3vw,19px);overflow-wrap:anywhere}.arrow{font-size:48px;line-height:1;font-weight:300}.button:focus-visible{outline:4px solid #111;outline-offset:4px}.button:hover{filter:brightness(1.06)}footer{text-align:center;font-size:15px;line-height:1.6;margin-top:24px;color:#4c5547}.bye{font-family:Georgia,serif;font-style:italic;color:#263e21;font-size:30px;margin:22px 0 0}@media(max-width:380px){main{padding:12px 14px 24px}.button{padding:19px 16px;gap:12px;border-radius:23px}.icon{flex-basis:39px}.icon svg{width:37px;height:37px}.arrow{font-size:37px}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:#fff;color:#243b22;font-family:Arial,Helvetica,sans-serif}
+main{width:100%;max-width:480px;margin-inline:auto;padding:clamp(16px,4vw,28px) clamp(16px,4vw,24px) 24px}
+header{text-align:center;margin-bottom:22px}
+header img{display:block;width:clamp(130px,39vw,170px);max-width:55%;height:auto;margin:0 auto 10px}
+h1{margin:0;font-size:clamp(21px,5.4vw,27px);line-height:1.2;font-weight:600}
+header p{margin:7px 0 0;color:#535b50;font-size:clamp(13px,3.5vw,15px);line-height:1.4}
+nav{display:grid;gap:11px}
+.button{display:flex;align-items:center;gap:clamp(10px,3vw,16px);border-radius:17px;padding:14px 15px;color:#fff;text-decoration:none;min-height:76px;min-width:0}
+.phone,.email{background:#334b24}
+.site{background:#e47b19}
+.facebook{background:linear-gradient(105deg,#2460ae,#274d88)}
+.instagram{background:linear-gradient(25deg,#ffcb5b 0%,#ff275e 30%,#ed0aa2 65%,#ac00cf 100%)}
+.icon{flex:0 0 32px;width:32px;height:32px;display:grid;place-items:center}
+.icon svg{display:block;width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.label{min-width:0;flex:1;display:grid;gap:5px}
+.label strong{font-size:clamp(15px,3.9vw,17px);line-height:1.25;font-weight:600;overflow-wrap:break-word}
+.label>span{font-size:clamp(12px,3.1vw,14px);line-height:1.35;overflow-wrap:anywhere}
+.arrow{flex:0 0 11px;font-size:29px;line-height:1;font-weight:300;text-align:center}
+.button:focus-visible{outline:3px solid #111;outline-offset:4px}
+@media(hover:hover){.button:hover{filter:brightness(1.06)}}
+footer{text-align:center;font-size:12px;line-height:1.6;margin-top:21px;color:#4c5547}
+footer p{margin:0}
+.bye{font-family:Georgia,serif;font-style:italic;color:#263e21;font-size:23px;margin:12px 0 0}
+@media(max-width:340px){.button{padding:12px;gap:10px}.icon{flex-basis:27px;width:27px}.icon svg{width:26px;height:26px}.label strong{font-size:14px}.label>span{font-size:11px}header{margin-bottom:18px}}
